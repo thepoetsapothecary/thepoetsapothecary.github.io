@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Poet's Apothecary — Giocchina Marie</title>
+<meta name="description" content="The Poet&#39;s Apothecary — Organic henna, handmade body care, botanical teas, intimate workshops, bookkeeping for small businesses and farms. Martha&#39;s Vineyard &amp; Remote. By Giocchina Marie.">
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --ink:          #0f0d12;
+    --deep:         #17131f;
+    --surface:      #1e1828;
+    --violet:       #7b52a8;
+    --teal:         #2e8b84;
+    --teal-light:   #4db8b0;
+    --forest:       #2d6b4a;
+    --forest-light: #4aab78;
+    --gold:         #c9a84c;
+    --gold-light:   #e8c86a;
+    --copper:       #b87040;
+    --bone:         #f0e8d8;
+    --parchment:    #faf4e8;
+    --cream:        #fefcf8;
+    --muted:        #8878a0;
+    --divider:      rgba(201,168,76,0.18);
+    --text-light:   rgba(240,232,216,0.85);
+    --text-dim:     rgba(240,232,216,0.55);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.75;
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 900;
+    background: rgba(15,13,18,0.97);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--divider);
+    padding: 0 52px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 400; color: var(--bone); text-decoration: none; line-height: 1.2; }
+  .nav-logo em { font-style: italic; color: var(--gold); display: block; }
+  .nav-logo span { font-family: 'Josefin Sans', sans-serif; font-weight: 100; font-size: 0.5rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-dim); display: block; margin-top: 2px; }
+
+  .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; }
+  .nav-links a { font-family: 'Josefin Sans', sans-serif; font-weight: 200; font-size: 0.56rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-book { color: var(--ink) !important; background: var(--gold); padding: 8px 16px; border-radius: 2px; transition: background 0.2s !important; font-weight: 300 !important; }
+  .nav-book:hover { background: var(--gold-light) !important; }
+
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--bone); }
+
+  .mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; background: var(--deep); border-bottom: 1px solid var(--divider); padding: 28px 36px 36px; z-index: 899; flex-direction: column; gap: 20px; }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { font-family: 'Josefin Sans', sans-serif; font-weight: 200; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim); text-decoration: none; }
+
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 64px; }
+
+  .hero-left { background: var(--deep); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px 64px; position: relative; overflow: hidden; }
+  .hero-left::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 70%, rgba(74,45,107,0.35), transparent 55%), radial-gradient(ellipse at 70% 20%, rgba(46,139,132,0.18), transparent 50%); }
+  .hero-left-inner { position: relative; z-index: 1; max-width: 420px; }
+
+  .hero-eyebrow { font-family: 'Josefin Sans', sans-serif; font-weight: 100; font-size: 0.56rem; letter-spacing: 0.42em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 24px; animation: fadeUp 1s ease 0.2s both; }
+
+  .hero-brand { animation: fadeUp 1s ease 0.4s both; }
+  .hero-brand-main { font-size: clamp(2.4rem, 4vw, 3.8rem); font-weight: 300; font-style: italic; line-height: 1.05; color: var(--bone); }
+  .hero-brand-main em { color: var(--gold); }
+  .hero-brand-by { font-family: 'Josefin Sans', sans-serif; font-weight: 100; font-size: 0.56rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-dim); margin-top: 14px; }
+  .hero-brand-name { font-size: 1.3rem; font-weight: 300; color: #b8a0d4; margin-top: 4px; font-style: italic; }
+  .hero-title { font-family: 'Josefin Sans', sans-serif; font-weight: 100; font-size: 0.56rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-dim); margin-top: 8px; animation: fadeUp 1s ease 0.6s both; }
+
+  .hero-desc { margin-top: 28px; font-size: 1rem; font-weight: 300; font-style: italic; color: var(--text-light); line-height: 1.85; border-left: 2px solid var(--violet); padding-left: 18px; text-align: left; animation: fadeUp 1s ease 0.8s both; }
+
+  .hero-ctas { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; justify-content: center; animation: fadeUp 1s ease 1s both; }
+
+  .btn-primary { font-family: 'Josefin Sans', sans-serif; font-weight: 300; font-size: 0.56rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 12px 24px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+  .btn-primary:hover { background: var(--gold-light); }
+
+  .btn-secondary { font-family: 'Josefin Sans', sans-serif; font-weight: 200; font-size: 0.56rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--bone); border: 1px solid rgba(240,232,216,0.25); padding: 12px 24px; border-radius: 2px; text-decoration: none; transition: border-color 0.2s; }
+  .btn-secondary:hover { border-color: var(--bone); }
+
+  .hero-right { background: var(--surface); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px 48px; }
+
+  .hero-nav-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; max-width: 480px; }
+
+  .hero-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.15); border-radius: 4px; padding: 20px 18px; text-decoration: none; transition: border-color 0.2s, background 0.2s, transform 0.2s; }
+  .hero-card:hover { border-color: var(--gold); background: rgba(201,168,76,0.05); transform: translateY(-2px); }
+  .hero-card-icon { font-size: 1.1rem; margin-bottom: 8px; display: block; }
+  .hero-card-name { font-family: 'Josefin Sans', sans-serif; font-size: 0.56rem; font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; color: var(--bone); margin-bottom: 4px; }
+  .hero-card-desc { font-size: 0.78rem; font-weight: 300; color: var(--text-dim); font-style: italic; line-height: 1.5; }
+
+  .hero-cafe { background: linear-gradient(135deg, rgba(74,45,107,0.35), rgba(46,139,132,0.18)); border: 1px solid rgba(123,82,168,0.3); border-radius: 4px; padding: 20px 18px; text-decoration: none; grid-column: span 2; display: flex; align-items: center; justify-content: space-between; transition: border-color 0.2s; }
+  .hero-cafe:hover { border-color: var(--violet); }
+  .hero-cafe .name { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic; color: var(--bone); }
+  .hero-cafe .sub { font-family: 'Josefin Sans', sans-serif; font-size: 0.5rem; font-weight: 100; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-light); margin-top: 3px; }
+  .arrow { color: var(--gold); font-size: 1.1rem; }
+
+  section { scroll-margin-top: 64px; }
+
+  .section-inner { max-width: 980px; margin: 0 auto; padding: 96px 52px; }
+
+  .section-header { text-align: center; margin-bottom: 48px; }
+
+  .section-label { font-family: 'Josefin Sans', sans-serif; font-weight: 200; font-size: 0.54rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .section-label::before, .section-label::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--divider), transparent); max-width: 120px; }
+
+  .section-title { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 300; line-height: 1.15; margin-bottom: 14px; text-align: center; }
+  .section-title em { font-style: italic; color: var(--violet); }
+
+  .section-intro { font-size: 1.02rem; font-weight: 300; color: #3a3245; line-height: 1.9; max-width: 580px; margin: 0 auto; text-align: center; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: start; margin-top: 40px; }
+
+  .body-text { font-size: 1.02rem; font-weight: 300; color: #3a3245; line-height: 1.9; }
+  .body-text p + p { margin-top: 1em; }
+
+  .feature-list { display: grid; gap: 10px; margin: 20px 0; }
+
+  .fi { padding: 12px 16px; border-radius: 3px; font-size: 0.92rem; font-weight: 300; color: var(--ink); border-left: 2px solid var(--violet); background: rgba(123,82,168,0.06); line-height: 1.55; }
+  .fi.teal { border-color: var(--teal); background: rgba(46,139,132,0.06); }
+  .fi.gold { border-color: var(--gold); background: rgba(201,168,76,0.06); }
+  .fi.forest { border-color: var(--forest-light); background: rgba(45,107,74,0.06); }
+
+  .cta-block { background: rgba(74,45,107,0.08); border: 1px solid rgba(123,82,168,0.2); border-radius: 5px; padding: 26px 28px; margin-top: 4px; }
+  .cta-block-title { font-size: 1.05rem; font-weight: 400; font-style: italic; margin-bottom: 6px; }
+  .cta-block-desc { font-size: 0.85rem; font-weight: 300; color: var(--muted); font-style: italic; margin-bottom: 16px; line-height: 1.6; }
+
+  .btn { display: inline-block; font-family: 'Josefin Sans', sans-serif; font-weight: 300; font-size: 0.54rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); background: var(--gold); padding: 10px 20px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+  .btn:hover { background: var(--gold-light); }
+  .btn.teal { background: var(--teal); color: white; }
+  .btn.teal:hover { background: var(--teal-light); }
+  .btn.forest { background: var(--forest); color: white; }
+  .btn.forest:hover { background: var(--forest-light); }
+  .btn.violet { background: var(--violet); color: white; }
+  .btn.violet:hover { background: #9768c0; }
+
+  .service-section { border-top: 1px solid var(--divider); }
+
+  #about { background: var(--deep); }
+  #about .section-title { color: var(--bone); }
+  #about .section-title em { color: var(--gold); }
+  #about .section-intro { color: var(--text-light); }
+  #about .section-label { color: var(--gold); }
+  #about .body-text { color: var(--text-light); }
+
+  .about-values { display: grid; gap: 12px; margin-top: 24px; }
+  .value-row { display: flex; gap: 12px; align-items: flex-start; }
+  .vdot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); margin-top: 11px; flex-shrink: 0; }
+  .vtext { font-size: 0.95rem; font-weight: 300; color: var(--text-light); line-height: 1.7; }
+
+  .about-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(123,82,168,0.25); border-radius: 6px; padding: 36px 32px; position: sticky; top: 88px; }
+  .about-quote { font-size: 1.12rem; font-style: italic; font-weight: 300; line-height: 1.85; color: var(--bone); margin-bottom: 16px; }
+  .about-attr { font-family: 'Josefin Sans', sans-serif; font-size: 0.52rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-light); }
+
+  .pills { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
+  .pill { font-family: 'Josefin Sans', sans-serif; font-size: 0.5rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(240,232,216,0.14); padding: 4px 10px; border-radius: 20px; }
+
+  #henna { background: var(--cream); }
+
+  .henna-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 32px; }
+  .henna-card { border: 1px solid var(--divider); border-radius: 5px; padding: 20px 18px; background: white; border-top: 3px solid var(--violet); }
+  .henna-card:nth-child(2) { border-top-color: var(--teal); }
+  .henna-card:nth-child(3) { border-top-color: var(--gold); }
+  .henna-card:nth-child(4) { border-top-color: var(--forest-light); }
+  .hc-name { font-size: 0.98rem; font-weight: 400; margin-bottom: 6px; }
+  .hc-desc { font-size: 0.82rem; font-weight: 300; font-style: italic; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
+  .hc-price { font-family: 'Josefin Sans', sans-serif; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--violet); }
+
+  .henna-event { grid-column: span 4; border: 1px solid var(--divider); border-radius: 5px; padding: 20px 24px; background: white; border-left: 3px solid var(--copper); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+
+  .provenance { background: var(--deep); border-radius: 5px; padding: 22px 26px; margin-top: 20px; border-left: 3px solid var(--gold); }
+  .provenance-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.5rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .provenance-text { font-size: 0.95rem; font-weight: 300; font-style: italic; color: var(--text-light); line-height: 1.75; }
+
+  #workshops { background: var(--surface); }
+  #workshops .section-label { color: var(--teal-light); }
+  #workshops .section-title { color: var(--bone); }
+  #workshops .section-title em { color: var(--teal-light); }
+  #workshops .section-intro { color: var(--text-light); }
+
+  .workshop-hero { background: rgba(255,255,255,0.04); border: 1px solid rgba(77,184,176,0.2); border-radius: 6px; padding: 36px 40px; margin-top: 36px; position: relative; overflow: hidden; text-align: center; }
+  .workshop-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 20%, rgba(46,139,132,0.1), transparent 55%); }
+  .workshop-hero-inner { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
+
+  .wbadge { display: inline-block; font-family: 'Josefin Sans', sans-serif; font-size: 0.5rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-light); border: 1px solid rgba(77,184,176,0.3); padding: 4px 11px; border-radius: 2px; margin-bottom: 14px; }
+  .wname { font-size: 1.9rem; font-weight: 300; font-style: italic; color: var(--bone); margin-bottom: 12px; }
+  .wdesc { font-size: 0.98rem; font-weight: 300; line-height: 1.85; color: var(--text-light); margin-bottom: 24px; }
+  .wmeta { display: flex; gap: 32px; flex-wrap: wrap; margin-bottom: 24px; justify-content: center; }
+  .wmeta-item span { display: block; font-family: 'Josefin Sans', sans-serif; font-size: 0.5rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 2px; }
+  .wmeta-item strong { font-weight: 300; font-size: 0.9rem; color: var(--bone); }
+
+  .workshop-extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 32px; }
+  .workshop-extra { background: rgba(255,255,255,0.03); border: 1px solid rgba(77,184,176,0.15); border-radius: 4px; padding: 18px 16px; text-align: center; }
+  .we-name { font-size: 0.95rem; font-weight: 400; font-style: italic; color: var(--bone); margin-bottom: 6px; }
+  .we-desc { font-size: 0.8rem; font-weight: 300; font-style: italic; color: var(--text-dim); line-height: 1.5; }
+
+  #crafted { background: var(--cream); }
+
+  .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
+  .pcat { border-radius: 5px; overflow: hidden; border: 1px solid var(--divider); }
+  .pcat-head { padding: 15px 17px 12px; background: var(--deep); border-bottom: 2px solid var(--violet); }
+  .pcat:nth-child(2) .pcat-head { border-color: var(--teal); }
+  .pcat:nth-child(3) .pcat-head { border-color: var(--gold); }
+  .pcat:nth-child(4) .pcat-head { border-color: var(--forest-light); }
+  .pcat:nth-child(5) .pcat-head { border-color: var(--copper); }
+  .pcat:nth-child(6) .pcat-head { border-color: #b8a0d4; }
+  .pcat-name { font-size: 0.96rem; font-weight: 400; color: var(--bone); margin-bottom: 2px; }
+  .pcat-sub { font-family: 'Josefin Sans', sans-serif; font-size: 0.48rem; font-weight: 100; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim); }
+  .pcat-body { padding: 14px 17px 18px; background: white; }
+  .plist { list-style: none; font-size: 0.86rem; font-weight: 300; color: #3a3245; line-height: 1.85; }
+  .plist li::before { content: '— '; color: var(--gold); font-size: 0.72rem; }
+
+  #bookkeeping { background: var(--ink); }
+  #bookkeeping .section-label { color: var(--forest-light); }
+  #bookkeeping .section-title { color: var(--bone); }
+  #bookkeeping .section-title em { color: var(--forest-light); }
+  #bookkeeping .section-intro { color: var(--text-light); }
+
+  .bk-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 40px; }
+  .bkt { background: rgba(255,255,255,0.04); border: 1px solid rgba(74,171,120,0.16); border-radius: 5px; padding: 26px 22px; transition: background 0.2s; }
+  .bkt:hover { background: rgba(255,255,255,0.07); }
+  .bkt.featured { background: rgba(45,107,74,0.18); border-color: rgba(74,171,120,0.38); }
+  .bkt-name { font-size: 1.15rem; font-weight: 400; font-style: italic; color: var(--bone); margin-bottom: 4px; }
+  .bkt-price { font-size: 1.5rem; font-weight: 300; color: var(--forest-light); margin-bottom: 16px; line-height: 1; }
+  .bkt-price span { font-family: 'Josefin Sans', sans-serif; font-size: 0.56rem; letter-spacing: 0.1em; color: var(--text-dim); font-weight: 200; }
+  .bkt-list { list-style: none; font-size: 0.86rem; font-weight: 300; line-height: 1.9; color: var(--text-light); }
+  .bkt-list li { padding-left: 14px; position: relative; }
+  .bkt-list li::before { content: '✓'; position: absolute; left: 0; color: var(--forest-light); font-size: 0.72rem; }
+
+  .bk-addons { margin-top: 40px; }
+  .bk-addons-title { font-family: 'Josefin Sans', sans-serif; font-size: 0.56rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--forest-light); margin-bottom: 16px; display: flex; align-items: center; gap: 14px; }
+  .bk-addons-title::before, .bk-addons-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, rgba(74,171,120,0.25), transparent); }
+
+  .addon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .addon-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(74,171,120,0.14); border-radius: 4px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .addon-name { font-size: 0.9rem; font-weight: 400; font-style: italic; color: var(--bone); margin-bottom: 3px; }
+  .addon-desc { font-size: 0.76rem; font-weight: 300; color: var(--text-dim); font-style: italic; line-height: 1.4; }
+  .addon-price { font-family: 'Josefin Sans', sans-serif; font-size: 0.72rem; color: var(--forest-light); font-weight: 300; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+
+  .bk-bottom { margin-top: 32px; background: rgba(255,255,255,0.03); border: 1px solid rgba(74,171,120,0.18); border-radius: 5px; padding: 26px 30px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .bk-bottom-text { font-size: 0.98rem; font-style: italic; font-weight: 300; color: var(--text-light); max-width: 480px; line-height: 1.7; }
+
+  #apothecary { background: var(--surface); }
+  #apothecary .section-label { color: var(--violet); }
+  #apothecary .section-title { color: var(--bone); }
+  #apothecary .section-title em { color: var(--teal-light); }
+  #apothecary .section-intro { color: var(--text-light); }
+
+  .cafe-wrap { background: var(--ink); border: 1px solid rgba(123,82,168,0.28); border-radius: 7px; padding: 44px 48px; margin-top: 36px; position: relative; overflow: hidden; text-align: center; }
+  .cafe-wrap::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 15% 85%, rgba(74,45,107,0.28), transparent 45%), radial-gradient(ellipse at 85% 15%, rgba(46,139,132,0.14), transparent 45%); }
+  .cafe-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+  .cafe-title { font-size: clamp(1.7rem, 3vw, 2.6rem); font-weight: 300; line-height: 1.1; color: var(--bone); margin-bottom: 12px; }
+  .cafe-title em { font-style: italic; color: var(--teal-light); }
+  .cafe-desc { font-size: 0.98rem; font-weight: 300; line-height: 1.85; color: var(--text-light); margin-bottom: 12px; }
+  .cafe-sample-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.52rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 16px; margin-top: 28px; }
+
+  .cafe-menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 28px; text-align: left; }
+  .cmi { background: rgba(255,255,255,0.05); border-radius: 4px; padding: 14px 16px; border-bottom: 2px solid rgba(123,82,168,0.35); }
+  .cmi:nth-child(2n) { border-color: rgba(77,184,176,0.35); }
+  .cmi:nth-child(3n) { border-color: rgba(201,168,76,0.35); }
+  .cmi-name { font-size: 0.9rem; font-weight: 400; color: var(--bone); margin-bottom: 3px; }
+  .cmi-note { font-size: 0.74rem; font-style: italic; color: var(--text-dim); line-height: 1.4; }
+
+  #contact { background: var(--cream); border-top: 1px solid var(--divider); }
+
+  .contact-items { display: grid; gap: 10px; margin-top: 22px; }
+  .contact-item { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: white; border: 1px solid var(--divider); border-radius: 4px; text-decoration: none; transition: border-color 0.2s; }
+  .contact-item:hover { border-color: var(--gold); }
+  .ci-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.48rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+  .ci-value { font-size: 0.93rem; font-weight: 300; color: var(--ink); }
+
+  .booking-cards { display: grid; gap: 10px; }
+  .booking-card { border: 1px solid var(--divider); border-radius: 5px; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 14px; background: white; transition: box-shadow 0.2s; }
+  .booking-card:hover { box-shadow: 0 2px 12px rgba(74,45,107,0.07); }
+  .bc-label { font-family: 'Josefin Sans', sans-serif; font-size: 0.48rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+  .bc-name { font-size: 0.95rem; font-weight: 400; font-style: italic; color: var(--ink); }
+
+  footer { background: var(--ink); color: var(--text-dim); padding: 40px 52px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; border-top: 1px solid var(--divider); }
+  .footer-brand { line-height: 1.3; }
+  .footer-brand-main { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; color: var(--bone); }
+  .footer-brand-main em { color: var(--gold); }
+  .footer-brand-sub { font-family: 'Josefin Sans', sans-serif; font-size: 0.48rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim); margin-top: 2px; }
+  .footer-copy { font-family: 'Josefin Sans', sans-serif; font-size: 0.5rem; letter-spacing: 0.13em; text-transform: uppercase; }
+  .footer-nav { display: flex; gap: 20px; list-style: none; }
+  .footer-nav a { font-family: 'Josefin Sans', sans-serif; font-size: 0.5rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
+  .footer-nav a:hover { color: var(--gold); }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 60px 32px; }
+    .hero-right { padding: 36px 32px; }
+    .two-col { grid-template-columns: 1fr; gap: 36px; }
+    .about-card { position: static; }
+    .henna-cards { grid-template-columns: 1fr 1fr; }
+    .henna-event { grid-column: span 2; }
+    .product-grid { grid-template-columns: 1fr 1fr; }
+    .bk-tiers { grid-template-columns: 1fr; }
+    .addon-grid { grid-template-columns: 1fr 1fr; }
+    .cafe-menu { grid-template-columns: 1fr 1fr; }
+    .workshop-extras { grid-template-columns: 1fr 1fr; }
+    .section-inner { padding: 64px 28px; }
+    .cafe-wrap { padding: 32px 24px; }
+    .workshop-hero { padding: 28px 24px; }
+    footer { flex-direction: column; text-align: center; padding: 32px 28px; }
+  }
+
+  @media (max-width: 560px) {
+    .hero-nav-cards { grid-template-columns: 1fr; }
+    .hero-cafe { grid-column: span 1; }
+    .henna-cards { grid-template-columns: 1fr; }
+    .henna-event { grid-column: span 1; flex-direction: column; }
+    .product-grid { grid-template-columns: 1fr; }
+    .addon-grid { grid-template-columns: 1fr; }
+    .cafe-menu { grid-template-columns: 1fr; }
+    .workshop-extras { grid-template-columns: 1fr; }
+    .bk-bottom { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#home" class="nav-logo">
+    <em>The Poet's Apothecary</em>
+    <span>by Giocchina Marie</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#about">About</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#henna">Henna</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#workshops">Workshops</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#crafted">Shop</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#bookkeeping">Bookkeeping</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#apothecary">The Café</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#contact" class="nav-book">Book Now</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#about" onclick="toggleMenu()">About</a>
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#henna" onclick="toggleMenu()">Henna &amp; Body Art</a>
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#workshops" onclick="toggleMenu()">Workshops</a>
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#crafted" onclick="toggleMenu()">Crafted With Intention</a>
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#bookkeeping" onclick="toggleMenu()">Bookkeeping</a>
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#apothecary" onclick="toggleMenu()">The Poet's Apothecary</a>
+  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#contact" onclick="toggleMenu()">Book &amp; Contact</a>
+</div>
+
+<section id="home">
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-left-inner">
+        <div class="hero-eyebrow">Martha's Vineyard · Available Remotely</div>
+        <div class="hero-brand">
+          <div class="hero-brand-main">The Poet's<br><em>Apothecary</em></div>
+          <div class="hero-brand-by">by</div>
+          <div class="hero-brand-name">Giocchina Marie</div>
+        </div>
+        <div class="hero-title">Independent Creative Practitioner</div>
+        <p class="hero-desc">Where words are medicine, making is ritual, and everything is created with intention.</p>
+        <div class="hero-ctas">
+          <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#contact" class="btn-primary">Book a Service</a>
+          <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#about" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-nav-cards">
+        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#henna" class="hero-card">
+          <span class="hero-card-icon">🌿</span>
+          <div class="hero-card-name">Henna &amp; Body Art</div>
+          <div class="hero-card-desc">Organic paste, sourced from Rajasthan. Events, ceremonies &amp; private sessions.</div>
+        </a>
+        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#workshops" class="hero-card">
+          <span class="hero-card-icon">✦</span>
+          <div class="hero-card-name">Workshops</div>
+          <div class="hero-card-desc">Intimate maker gatherings. Small, intentional, experiential.</div>
+        </a>
+        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#crafted" class="hero-card">
+          <span class="hero-card-icon">🕯</span>
+          <div class="hero-card-name">Crafted With Intention</div>
+          <div class="hero-card-desc">Body care, botanical teas, candles, handmade paper, jewelry &amp; more.</div>
+        </a>
+        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#bookkeeping" class="hero-card">
+          <span class="hero-card-icon">📒</span>
+          <div class="hero-card-name">Bookkeeping</div>
+          <div class="hero-card-desc">QuickBooks certified. For makers, farms &amp; community orgs.</div>
+        </a>
+        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#apothecary" class="hero-cafe">
+          <div>
+            <div class="name">The Pop Up Craft Café</div>
+            <div class="sub">A traveling making experience · Coming Soon</div>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">About</div>
+      <h2 class="section-title">The same <em>hands</em> behind everything</h2>
+      <p class="section-intro">Maker, poet, natural mystic. I have been creating things with my hands my entire life. Henna was just where you found me first.</p>
+    </div>
+    <div class="two-col">
+      <div class="reveal">
+        <div class="body-text">
+          <p>I'm Giocchina Marie — independent creative practitioner rooted on Martha's Vineyard. My work spans organic henna, handmade body care, botanical teas, fiber arts, handmade paper, candles, sculpture, and bookkeeping for the kinds of small businesses I believe in.</p>
+          <p>I am also a grower — working toward a farm practice where what I grow, what I make, and what I offer are one continuous living thing. The botanicals in my teas, the herbs in my body care, the flowers pressed into my paper — all from the same earth.</p>
+          <p>Everything I make carries the same quality: slowly, deliberately, and with great care for what things are made of and what they mean.</p>
+        </div>
+        <div class="about-values">
+          <div class="value-row"><div class="vdot"></div><div class="vtext">Organic ingredients — always. No shortcuts on what touches your skin or your body.</div></div>
+          <div class="value-row"><div class="vdot" style="background:var(--teal-light)"></div><div class="vtext">Low-waste by intention — upcycled, reclaimed, diverted from landfill where possible.</div></div>
+          <div class="value-row"><div class="vdot" style="background:var(--forest-light)"></div><div class="vtext">Rooted in place — grown, made, and offered on Martha's Vineyard (Noepe).</div></div>
+          <div class="value-row"><div class="vdot" style="background:var(--violet)"></div><div class="vtext">Values-aligned — I work with people doing meaningful things.</div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="about-card">
+          <div class="about-quote">"I make things with my hands and my whole heart. Not defined by a single medium — defined by a way of moving through the world."</div>
+          <div class="about-attr">— Giocchina Marie</div>
+          <div class="pills">
+            <span class="pill">Henna Artist</span>
+            <span class="pill">Fiber Arts</span>
+            <span class="pill">Body Care</span>
+            <span class="pill">Botanical Teas</span>
+            <span class="pill">Sculptor</span>
+            <span class="pill">Grower</span>
+            <span class="pill">Spoken Word Poet</span>
+            <span class="pill">Natural Mystic</span>
+            <span class="pill">Bookkeeper</span>
+            <span class="pill">QuickBooks Certified</span>
+            <span class="pill">Martha's Vineyard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="henna" class="service-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Henna &amp; Body Art</div>
+      <h2 class="section-title">Organic henna, <em>blended with intention</em></h2>
+      <p class="section-intro">Every batch of paste is blended by hand from entirely organic ingredients. Henna requires 24–36 hours of dye release time, so each batch is prepared fresh ahead of your appointment and carefully stored to preserve its potency.</p>
+    </div>
+    <div class="two-col">
+      <div class="reveal">
+        <div class="henna-cards">
+          <div class="henna-card">
+            <div class="hc-name">The Simple Mark</div>
+            <div class="hc-desc">A single intentional element — finger, small wrist accent, ankle symbol.</div>
+            <div class="hc-price">From $35</div>
+          </div>
+          <div class="henna-card">
+            <div class="hc-name">The Garden</div>
+            <div class="hc-desc">A flowing medium design — full wrist, forearm, or foot.</div>
+            <div class="hc-price">From $65</div>
+          </div>
+          <div class="henna-card">
+            <div class="hc-name">The Devotion</div>
+            <div class="hc-desc">A large or elaborate design — full hand, upper arm, or shoulder piece.</div>
+            <div class="hc-price">From $110</div>
+          </div>
+          <div class="henna-card">
+            <div class="hc-name">The Ceremony</div>
+            <div class="hc-desc">The full luxurious experience — an elaborate, time-dedicated design. Includes email consultation.</div>
+            <div class="hc-price">From $175</div>
+          </div>
+          <div class="henna-event">
+            <div>
+              <div class="hc-name">Events &amp; Gatherings</div>
+              <div class="hc-desc">Private parties, ceremonies, and celebrations on Martha's Vineyard. Reach out for custom event pricing.</div>
+            </div>
+            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_HENNA_LINK" class="btn">Inquire →</a>
+          </div>
+        </div>
+        <div class="provenance">
+          <div class="provenance-label">✦ On Sourcing</div>
+          <div class="provenance-text">The henna I use is organic powder sourced directly from a small family farm in Rajasthan, India — the historic heart of henna cultivation. I order from the farmer directly, maintaining a personal relationship with the source of every batch I blend. This is rare. It matters to me.</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="feature-list">
+          <div class="fi">100% organic paste — blended fresh for every booking</div>
+          <div class="fi">Directly sourced from a family farm in Rajasthan, India</div>
+          <div class="fi">Mobile on Martha's Vineyard — I come to you</div>
+          <div class="fi">Ceremonial &amp; intention-based approach available</div>
+          <div class="fi">Formerly Island Henna · same hands, wider world</div>
+        </div>
+        <div class="cta-block">
+          <div class="cta-block-title">Ready to book?</div>
+          <div class="cta-block-desc">Schedule through the link below or reach out directly. All communication by email — so we both have a clear record.</div>
+          <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_HENNA_LINK" class="btn">Book Henna →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="workshops" class="service-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Workshops &amp; Events</div>
+      <h2 class="section-title">Intimate gatherings <em>rooted in making</em></h2>
+      <p class="section-intro">Workshops are small by design — never more than 6 guests. Each one is led entirely by me. This is not a class. This is an experience.</p>
+    </div>
+    <div class="reveal">
+      <div class="workshop-hero">
+        <div class="workshop-hero-inner">
+          <div class="wbadge">✦ Signature Experience — Now Booking</div>
+          <div class="wname">Henna &amp; Intention</div>
+          <div class="wdesc">Come sit with me. We begin with a moment of stillness — a chance to ask yourself what you're carrying and what you'd like to call in. Then I blend paste by hand and place a design on your skin while we talk, or sit quietly, or both. You'll leave with henna that lasts 1–2 weeks, an intention card, and the particular fullness that comes from being seen and made something beautiful.</div>
+          <div class="wmeta">
+            <div class="wmeta-item"><span>Location</span><strong>Martha's Vineyard</strong></div>
+            <div class="wmeta-item"><span>Group Size</span><strong>4–6 Guests</strong></div>
+            <div class="wmeta-item"><span>Investment</span><strong>$65 / person</strong></div>
+          </div>
+          <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_WORKSHOP_LINK" class="btn teal">Reserve Your Seat →</a>
+        </div>
+      </div>
+    </div>
+    <div class="workshop-extras reveal">
+      <div class="workshop-extra">
+        <div class="we-name">Candle Pouring</div>
+        <div class="we-desc">Hand-pour an intention candle in a salvaged vessel. Seasonal offerings.</div>
+      </div>
+      <div class="workshop-extra">
+        <div class="we-name">Handmade Paper</div>
+        <div class="we-desc">Pull your own sheet of paper from reclaimed materials. Press botanicals into the surface.</div>
+      </div>
+      <div class="workshop-extra">
+        <div class="we-name">Private Gatherings</div>
+        <div class="we-desc">Custom workshop experiences for groups of 4–10. Studio &amp; wellness space collaborations welcome.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="crafted" class="service-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Crafted With Intention</div>
+      <h2 class="section-title">Handmade goods, <em>made to be used and loved</em></h2>
+      <p class="section-intro">Everything here was made slowly, with organic or reclaimed materials, by my hands — many of them grown or foraged from the farm. Available at seasonal pop-up events and by direct commission.</p>
+    </div>
+    <div class="product-grid reveal">
+      <div class="pcat">
+        <div class="pcat-head"><div class="pcat-name">Body Care</div><div class="pcat-sub">Organic · Handcrafted</div></div>
+        <div class="pcat-body">
+          <ul class="plist">
+            <li>Bar soap — cold process</li>
+            <li>Body butter &amp; balm</li>
+            <li>Liquid soap — Castile base</li>
+            <li>Perfume &amp; body oil</li>
+            <li>Lotion &amp; skin care</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pcat">
+        <div class="pcat-head"><div class="pcat-name">Botanical Teas</div><div class="pcat-sub">Grown · Dried · Blended</div></div>
+        <div class="pcat-body">
+          <ul class="plist">
+            <li>Single-herb dried botanicals</li>
+            <li>Seasonal loose leaf blends</li>
+            <li>Farm-grown &amp; foraged herbs</li>
+            <li>Custom wellness blends</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pcat">
+        <div class="pcat-head"><div class="pcat-name">Candles &amp; Paper</div><div class="pcat-sub">Poured &amp; Pulled by Hand</div></div>
+        <div class="pcat-body">
+          <ul class="plist">
+            <li>Intention candles — hand poured</li>
+            <li>Salvaged vessel candles</li>
+            <li>Handmade paper sheets</li>
+            <li>Botanical pressed paper</li>
+            <li>Hand-bound journals</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pcat">
+        <div class="pcat-head"><div class="pcat-name">Jewelry &amp; Fiber</div><div class="pcat-sub">Made to Be Worn</div></div>
+        <div class="pcat-body">
+          <ul class="plist">
+            <li>Handcrafted jewelry</li>
+            <li>Crochet wearables &amp; accessories</li>
+            <li>One-of-a-kind fiber pieces</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pcat">
+        <div class="pcat-head"><div class="pcat-name">Small Woodcraft</div><div class="pcat-sub">Reclaimed &amp; Handmade</div></div>
+        <div class="pcat-body">
+          <ul class="plist">
+            <li>Tiny walnut keepsake boxes</li>
+            <li>Small decorative woodcraft</li>
+            <li>Sculpture — commission only</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pcat">
+        <div class="pcat-head"><div class="pcat-name">Commission Work</div><div class="pcat-sub">Made For You</div></div>
+        <div class="pcat-body">
+          <ul class="plist">
+            <li>Custom crochet pieces</li>
+            <li>Custom body care blends</li>
+            <li>Custom botanical tea blends</li>
+            <li>Personalized gift sets</li>
+            <li>Large-scale sculpture (inquire)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-block reveal" style="margin-top: 20px; max-width: 460px; margin-left: auto; margin-right: auto; text-align: center;">
+      <div class="cta-block-title">Find my work</div>
+      <div class="cta-block-desc">Available at seasonal pop-up events and by direct commission. Reach out to inquire about current availability or a custom order.</div>
+      <a href="mailto:giocchina@thepoetsapothecary.com" class="btn violet">Get in Touch →</a>
+    </div>
+  </div>
+</section>
+
+<section id="bookkeeping" class="service-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Bookkeeping Services</div>
+      <h2 class="section-title">Your numbers, <em>handled with care</em></h2>
+      <p class="section-intro">QuickBooks certified bookkeeping for small businesses, organic farms, and community organizations. Remote-first, available anywhere. I understand irregular income, material costs, and the particular financial reality of people doing meaningful work — because I live it too.</p>
+    </div>
+    <div class="bk-tiers reveal">
+      <div class="bkt">
+        <div class="bkt-name">Seedling</div>
+        <div class="bkt-price">$175 <span>/ month</span></div>
+        <ul class="bkt-list">
+          <li>Monthly reconciliation</li>
+          <li>Up to 2 accounts</li>
+          <li>Profit &amp; Loss statement</li>
+          <li>QuickBooks or spreadsheet</li>
+          <li>Email support within 48hrs</li>
+          <li>Annual review prep summary</li>
+        </ul>
+      </div>
+      <div class="bkt featured">
+        <div class="bkt-name">Root System</div>
+        <div class="bkt-price">$325 <span>/ month</span></div>
+        <ul class="bkt-list">
+          <li>Everything in Seedling</li>
+          <li>Up to 4 accounts</li>
+          <li>A/P &amp; A/R tracking</li>
+          <li>Quarterly plain-language summaries</li>
+          <li>QuickBooks setup (first month)</li>
+          <li>Monthly 30-min check-in</li>
+          <li>Priority response within 24hrs</li>
+        </ul>
+      </div>
+      <div class="bkt">
+        <div class="bkt-name">Full Canopy</div>
+        <div class="bkt-price">$550 <span>/ month</span></div>
+        <ul class="bkt-list">
+          <li>Everything in Root System</li>
+          <li>Unlimited accounts &amp; volume</li>
+          <li>Payroll coordination support</li>
+          <li>Grant &amp; restricted fund tracking</li>
+          <li>Seasonal cash flow planning</li>
+          <li>CPA tax prep liaison</li>
+          <li>Two check-ins per month</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bk-addons reveal">
+      <div class="bk-addons-title">À La Carte Add-Ons</div>
+      <div class="addon-grid">
+        <div class="addon-item">
+          <div><div class="addon-name">QuickBooks Setup</div><div class="addon-desc">New account built from scratch</div></div>
+          <div class="addon-price">$200</div>
+        </div>
+        <div class="addon-item">
+          <div><div class="addon-name">Books Cleanup</div><div class="addon-desc">Per month of backlog untangled</div></div>
+          <div class="addon-price">$85/mo</div>
+        </div>
+        <div class="addon-item">
+          <div><div class="addon-name">Tax Ready Package</div><div class="addon-desc">Year-end cleanup &amp; CPA handoff</div></div>
+          <div class="addon-price">$275</div>
+        </div>
+        <div class="addon-item">
+          <div><div class="addon-name">One-Time Review</div><div class="addon-desc">Single month snapshot &amp; notes</div></div>
+          <div class="addon-price">$150</div>
+        </div>
+        <div class="addon-item">
+          <div><div class="addon-name">Spreadsheet Build</div><div class="addon-desc">Custom income &amp; expense tracker</div></div>
+          <div class="addon-price">$95</div>
+        </div>
+        <div class="addon-item">
+          <div><div class="addon-name">Extra Check-In</div><div class="addon-desc">30-min call outside your plan</div></div>
+          <div class="addon-price">$45</div>
+        </div>
+      </div>
+    </div>
+    <div class="bk-bottom reveal">
+      <div class="bk-bottom-text">All new clients begin with a free email consultation — no commitment, no pressure. Sliding scale available for qualifying nonprofits and community organizations.</div>
+      <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_BOOKKEEPING_LINK" class="btn forest">Start the Conversation →</a>
+    </div>
+  </div>
+</section>
+
+<section id="apothecary" class="service-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">The Poet's Apothecary</div>
+      <h2 class="section-title">Where making things <em>is medicine</em></h2>
+      <p class="section-intro">The Poet's Apothecary is the name for everything I am and everything I'm building — a place where words heal, making is ritual, and everyone is welcome at the table.</p>
+    </div>
+    <div class="cafe-wrap reveal">
+      <div class="cafe-inner">
+        <div class="cafe-title">The Pop Up<br><em>Craft Café</em></div>
+        <div class="cafe-desc">A menu-driven, traveling making experience built from low-waste and reclaimed materials. Guests arrive, browse a handcrafted menu, choose their experience, and leave with something made by their own hands. Part market, part workshop, part community ritual.</div>
+        <div class="cafe-sample-label">✦ Sample Menu — Offerings Being Finalized · Coming Soon</div>
+        <div class="cafe-menu">
+          <div class="cmi"><div class="cmi-name">The Daily Paper</div><div class="cmi-note">Handmade paper from reclaimed materials</div></div>
+          <div class="cmi"><div class="cmi-name">Pour &amp; Intend</div><div class="cmi-note">Hand-poured candle in a salvaged vessel</div></div>
+          <div class="cmi"><div class="cmi-name">Marked</div><div class="cmi-note">Organic henna applied by Giocchina</div></div>
+          <div class="cmi"><div class="cmi-name">Poet's Corner</div><div class="cmi-note">Spoken word session — your words on handmade paper</div></div>
+          <div class="cmi"><div class="cmi-name">From the Farm</div><div class="cmi-note">Seasonal botanical offering — grown here</div></div>
+          <div class="cmi"><div class="cmi-name">More Coming</div><div class="cmi-note">Menu in development · follow along</div></div>
+        </div>
+        <a href="mailto:giocchina@thepoetsapothecary.com" class="btn violet">Stay in the Loop →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Book &amp; Connect</div>
+      <h2 class="section-title">Let's work <em>together</em></h2>
+      <p class="section-intro">Every booking starts with a conversation. Reach out directly or use the service links below — I respond to all inquiries personally, by email.</p>
+    </div>
+    <div class="two-col reveal">
+      <div>
+        <div class="contact-items">
+          <a href="mailto:giocchina@thepoetsapothecary.com" class="contact-item">
+            <div><div class="ci-label">Email</div><div class="ci-value">giocchina@thepoetsapothecary.com</div></div>
+          </a>
+          <a href="https://instagram.com/thepoetsapothecary_mv" class="contact-item">
+            <div><div class="ci-label">Instagram</div><div class="ci-value">@thepoetsapothecary_mv</div></div>
+          </a>
+          <a href="https://giocchinamarie.substack.com/" target="_blank" class="contact-item">
+            <div><div class="ci-label">Just Words — Poetry &amp; Writing</div><div class="ci-value">giocchinamarie.substack.com</div></div>
+          </a>
+        </div>
+        <p style="margin-top: 16px; font-size: 0.88rem; font-style: italic; color: var(--muted);">Based on Martha's Vineyard. All services available remotely.</p>
+      </div>
+      <div>
+        <div class="booking-cards">
+          <div class="booking-card">
+            <div><div class="bc-label">Henna &amp; Body Art</div><div class="bc-name">Sessions, events &amp; ceremonies</div></div>
+            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_HENNA_LINK" class="btn">Book →</a>
+          </div>
+          <div class="booking-card">
+            <div><div class="bc-label">Workshops &amp; Events</div><div class="bc-name">Henna &amp; Intention + seasonal offerings</div></div>
+            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_WORKSHOP_LINK" class="btn teal">Reserve →</a>
+          </div>
+          <div class="booking-card">
+            <div><div class="bc-label">Bookkeeping Services</div><div class="bc-name">Free email consultation</div></div>
+            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_BOOKKEEPING_LINK" class="btn forest">Start →</a>
+          </div>
+          <div class="booking-card">
+            <div><div class="bc-label">Shop &amp; Commissions</div><div class="bc-name">Custom orders &amp; product inquiries</div></div>
+            <a href="mailto:giocchina@thepoetsapothecary.com" class="btn violet">Inquire →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">
+    <div class="footer-brand-main">The Poet's <em>Apothecary</em></div>
+    <div class="footer-brand-sub">by Giocchina Marie · Martha's Vineyard</div>
+  </div>
+  <div class="footer-copy">© 2026 The Poet's Apothecary</div>
+  <ul class="footer-nav">
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#henna">Henna</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#bookkeeping">Bookkeeping</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#apothecary">The Café</a></li>
+    <li><a href="https://giocchinamarie.substack.com/" target="_blank">Just Words</a></li>
+    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(1).html#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobileMenu');
+    const ham = document.querySelector('.hamburger');
+    if (menu && ham && !menu.contains(e.target) && !ham.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a:not(.nav-book)');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+    navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold-light)' : ''; });
+  });
+</script>
+
+
+</body></html>
