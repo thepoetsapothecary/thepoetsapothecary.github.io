@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0078)file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Poet's Apothecary — Giocchina Marie</title>
-<meta name="description" content="The Poet&#39;s Apothecary — Organic henna, handcrafted curiosities, botanical teas, intimate workshops, bookkeeping for small businesses. Martha&#39;s Vineyard &amp; Remote. By Giocchina Marie.">
-<link href="./index_files/css2" rel="stylesheet">
+<meta name="description" content="The Poet's Apothecary — Organic henna, handcrafted curiosities, botanical teas, intimate workshops, bookkeeping for small businesses. Martha's Vineyard & Remote. By Giocchina Marie.">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Uncial+Antiqua&family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink:          #0a0810;
@@ -58,9 +58,11 @@
     justify-content: space-between;
   }
 
-  .nav-logo { text-decoration: none; line-height: 1.2; }
-  .nav-logo-main { font-family: 'Cinzel Decorative', serif; font-size: 0.85rem; font-weight: 400; color: var(--silver); letter-spacing: 0.06em; display: block; }
-  .nav-logo-sub { font-family: 'Josefin Sans', sans-serif; font-weight: 100; font-size: 0.48rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-dim); display: block; margin-top: 2px; }
+  .nav-logo { text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .nav-logo-icon { display: block; height: 36px; width: auto; filter: invert(85%) sepia(5%) saturate(300%) hue-rotate(180deg) brightness(105%); transition: opacity 0.2s; }
+  .nav-logo:hover .nav-logo-icon { opacity: 0.8; }
+  .nav-logo-main { font-family: 'Cinzel Decorative', serif; font-size: 0.75rem; font-weight: 400; color: var(--silver); letter-spacing: 0.06em; display: block; text-align: center; }
+  .nav-logo-sub { font-family: 'Josefin Sans', sans-serif; font-weight: 100; font-size: 0.44rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-dim); display: block; margin-top: 1px; text-align: center; }
 
   .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; }
   .nav-links a { font-family: 'Josefin Sans', sans-serif; font-weight: 200; font-size: 0.56rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
@@ -452,17 +454,18 @@
 <body>
 
 <nav>
-  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#home" class="nav-logo">
+  <a href="#home" class="nav-logo">
+    <img src="TPA_logo_web.png" alt="The Poet's Apothecary" class="nav-logo-icon">
     <span class="nav-logo-main">The Poet's Apothecary</span>
     <span class="nav-logo-sub">by Giocchina Marie</span>
   </a>
   <ul class="nav-links">
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#about">About</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#henna">Henna</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#bookkeeping">Bookkeeping</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#crafted">The Craft</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#workshops">Workshops</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#contact" class="nav-book">Book Now</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#henna">Henna</a></li>
+    <li><a href="#bookkeeping">Bookkeeping</a></li>
+    <li><a href="#crafted">The Craft</a></li>
+    <li><a href="#workshops">Workshops</a></li>
+    <li><a href="#contact" class="nav-book">Book Now</a></li>
   </ul>
   <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -470,12 +473,12 @@
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#about" onclick="toggleMenu()">About</a>
-  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#henna" onclick="toggleMenu()">Henna &amp; Body Art</a>
-  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#bookkeeping" onclick="toggleMenu()">Bookkeeping</a>
-  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#crafted" onclick="toggleMenu()">Handcrafted Curiosities</a>
-  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#workshops" onclick="toggleMenu()">Workshops &amp; Pop-Ups</a>
-  <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#contact" onclick="toggleMenu()">Book &amp; Contact</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#henna" onclick="toggleMenu()">Henna & Body Art</a>
+  <a href="#bookkeeping" onclick="toggleMenu()">Bookkeeping</a>
+  <a href="#crafted" onclick="toggleMenu()">Handcrafted Curiosities</a>
+  <a href="#workshops" onclick="toggleMenu()">Workshops & Pop-Ups</a>
+  <a href="#contact" onclick="toggleMenu()">Book & Contact</a>
 </div>
 
 <!-- HERO -->
@@ -485,14 +488,14 @@
       <div class="hero-left-inner">
         <div class="hero-moon">
           <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="28" cy="28" r="20" fill="rgba(200,205,212,0.08)" stroke="rgba(200,205,212,0.35)" stroke-width="0.8"></circle>
-            <path d="M28 8 C18 8 10 17 10 28 C10 39 18 48 28 48 C22 44 18 36 18 28 C18 20 22 12 28 8Z" fill="rgba(200,205,212,0.2)"></path>
-            <circle cx="38" cy="18" r="1.5" fill="rgba(200,205,212,0.5)"></circle>
-            <circle cx="42" cy="28" r="1" fill="rgba(200,205,212,0.35)"></circle>
-            <circle cx="36" cy="38" r="1.2" fill="rgba(200,205,212,0.4)"></circle>
-            <circle cx="20" cy="14" r="0.8" fill="rgba(77,184,176,0.5)"></circle>
-            <circle cx="16" cy="32" r="0.6" fill="rgba(77,184,176,0.4)"></circle>
-            <circle cx="22" cy="42" r="0.7" fill="rgba(123,82,168,0.5)"></circle>
+            <circle cx="28" cy="28" r="20" fill="rgba(200,205,212,0.08)" stroke="rgba(200,205,212,0.35)" stroke-width="0.8"/>
+            <path d="M28 8 C18 8 10 17 10 28 C10 39 18 48 28 48 C22 44 18 36 18 28 C18 20 22 12 28 8Z" fill="rgba(200,205,212,0.2)"/>
+            <circle cx="38" cy="18" r="1.5" fill="rgba(200,205,212,0.5)"/>
+            <circle cx="42" cy="28" r="1" fill="rgba(200,205,212,0.35)"/>
+            <circle cx="36" cy="38" r="1.2" fill="rgba(200,205,212,0.4)"/>
+            <circle cx="20" cy="14" r="0.8" fill="rgba(77,184,176,0.5)"/>
+            <circle cx="16" cy="32" r="0.6" fill="rgba(77,184,176,0.4)"/>
+            <circle cx="22" cy="42" r="0.7" fill="rgba(123,82,168,0.5)"/>
           </svg>
         </div>
         <div class="hero-eyebrow">Martha's Vineyard · Available Remotely</div>
@@ -504,34 +507,34 @@
         <div class="hero-title">Independent Creative Practitioner</div>
         <p class="hero-desc">Where words are medicine, craft is ritual, and everything is created with intention.</p>
         <div class="hero-ctas">
-          <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#contact" class="btn-primary">Book a Service</a>
-          <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#about" class="btn-secondary">Learn More</a>
+          <a href="#contact" class="btn-primary">Book a Service</a>
+          <a href="#about" class="btn-secondary">Learn More</a>
         </div>
       </div>
     </div>
     <div class="hero-right">
       <div class="hero-nav-cards">
-        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#henna" class="hero-card">
+        <a href="#henna" class="hero-card">
           <span class="hero-card-icon">🌿</span>
-          <div class="hero-card-name">Henna &amp; Body Art</div>
-          <div class="hero-card-desc">Organic paste, sourced from Rajasthan. Events, ceremonies &amp; private sessions.</div>
+          <div class="hero-card-name">Henna & Body Art</div>
+          <div class="hero-card-desc">Organic paste, sourced from Rajasthan. Events, ceremonies & private sessions.</div>
         </a>
-        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#bookkeeping" class="hero-card">
+        <a href="#bookkeeping" class="hero-card">
           <span class="hero-card-icon">📒</span>
           <div class="hero-card-name">Bookkeeping</div>
-          <div class="hero-card-desc">QuickBooks certified. For makers &amp; community orgs.</div>
+          <div class="hero-card-desc">QuickBooks certified. For makers & community orgs.</div>
         </a>
-        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#crafted" class="hero-card">
+        <a href="#crafted" class="hero-card">
           <span class="hero-card-icon">🕯</span>
           <div class="hero-card-name">Handcrafted Curiosities</div>
           <div class="hero-card-desc">Magic crafted by hand for awakening joy.</div>
         </a>
-        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#workshops" class="hero-card">
+        <a href="#workshops" class="hero-card">
           <span class="hero-card-icon">✦</span>
           <div class="hero-card-name">Workshops</div>
           <div class="hero-card-desc">Intimate maker gatherings. Small, intentional, experiential.</div>
         </a>
-        <a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#workshops" class="hero-cafe">
+        <a href="#workshops" class="hero-cafe">
           <div>
             <div class="name">The Pop Up Craft Café</div>
             <div class="sub">A traveling craft experience · Coming Soon</div>
@@ -594,7 +597,7 @@
   <div class="section-inner">
     <div class="section-header reveal">
       <div class="celestial-divider">☽ ✦ ☾</div>
-      <div class="section-label">Henna &amp; Body Art</div>
+      <div class="section-label">Henna & Body Art</div>
       <h2 class="section-title">Organic henna, <em>blended with intention</em></h2>
       <p class="section-intro">Every batch of paste is blended by hand from entirely organic ingredients and carefully stored to preserve its potency.</p>
     </div>
@@ -623,10 +626,10 @@
           </div>
           <div class="henna-event">
             <div>
-              <div class="hc-name">Events &amp; Gatherings</div>
+              <div class="hc-name">Events & Gatherings</div>
               <div class="hc-desc">Private parties, ceremonies, and celebrations on Martha's Vineyard. Reach out for custom event pricing.</div>
             </div>
-            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_HENNA_LINK" class="btn">Inquire →</a>
+            <a href="YOUR_ACUITY_HENNA_LINK" class="btn">Inquire →</a>
           </div>
         </div>
         <div class="provenance">
@@ -645,7 +648,7 @@
         <div class="cta-block">
           <div class="cta-block-title">Ready to book?</div>
           <div class="cta-block-desc">Schedule below or reach out directly. All communication by email — so we both have a clear record.</div>
-          <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_HENNA_LINK" class="btn">Book Henna →</a>
+          <a href="YOUR_ACUITY_HENNA_LINK" class="btn">Book Henna →</a>
         </div>
       </div>
     </div>
@@ -668,7 +671,7 @@
         <ul class="bkt-list">
           <li>Monthly reconciliation</li>
           <li>Up to 2 accounts</li>
-          <li>Profit &amp; Loss statement</li>
+          <li>Profit & Loss statement</li>
           <li>QuickBooks or spreadsheet</li>
           <li>Email support within 48hrs</li>
           <li>Annual review prep summary</li>
@@ -680,7 +683,7 @@
         <ul class="bkt-list">
           <li>Everything in Seedling</li>
           <li>Up to 4 accounts</li>
-          <li>A/P &amp; A/R tracking</li>
+          <li>A/P & A/R tracking</li>
           <li>Quarterly plain-language summaries</li>
           <li>QuickBooks setup (first month)</li>
           <li>Monthly 30-min check-in</li>
@@ -692,9 +695,9 @@
         <div class="bkt-price">$850 <span>/ month</span></div>
         <ul class="bkt-list">
           <li>Everything in Root System</li>
-          <li>Unlimited accounts &amp; volume</li>
+          <li>Unlimited accounts & volume</li>
           <li>Payroll coordination support</li>
-          <li>Grant &amp; restricted fund tracking</li>
+          <li>Grant & restricted fund tracking</li>
           <li>Seasonal cash flow planning</li>
           <li>CPA tax prep liaison</li>
           <li>Two check-ins per month</li>
@@ -706,15 +709,15 @@
       <div class="addon-grid">
         <div class="addon-item"><div><div class="addon-name">QuickBooks Setup</div><div class="addon-desc">New account built from scratch</div></div><div class="addon-price">$215</div></div>
         <div class="addon-item"><div><div class="addon-name">Books Cleanup</div><div class="addon-desc">Per month of backlog untangled</div></div><div class="addon-price">$85/mo</div></div>
-        <div class="addon-item"><div><div class="addon-name">Tax Ready Package</div><div class="addon-desc">Year-end cleanup &amp; CPA handoff</div></div><div class="addon-price">$255</div></div>
-        <div class="addon-item"><div><div class="addon-name">One-Time Review</div><div class="addon-desc">Single month snapshot &amp; notes</div></div><div class="addon-price">$130</div></div>
-        <div class="addon-item"><div><div class="addon-name">Spreadsheet Build</div><div class="addon-desc">Custom income &amp; expense tracker</div></div><div class="addon-price">$85</div></div>
+        <div class="addon-item"><div><div class="addon-name">Tax Ready Package</div><div class="addon-desc">Year-end cleanup & CPA handoff</div></div><div class="addon-price">$255</div></div>
+        <div class="addon-item"><div><div class="addon-name">One-Time Review</div><div class="addon-desc">Single month snapshot & notes</div></div><div class="addon-price">$130</div></div>
+        <div class="addon-item"><div><div class="addon-name">Spreadsheet Build</div><div class="addon-desc">Custom income & expense tracker</div></div><div class="addon-price">$85</div></div>
         <div class="addon-item"><div><div class="addon-name">Extra Check-In</div><div class="addon-desc">30-min call outside your plan</div></div><div class="addon-price">$45</div></div>
       </div>
     </div>
     <div class="bk-bottom reveal">
       <div class="bk-bottom-text">All new clients begin with a free email consultation — no commitment, no pressure. Sliding scale available for qualifying nonprofits and community organizations.</div>
-      <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_BOOKKEEPING_LINK" class="btn forest">Start the Conversation →</a>
+      <a href="YOUR_ACUITY_BOOKKEEPING_LINK" class="btn forest">Start the Conversation →</a>
     </div>
   </div>
 </section>
@@ -734,7 +737,7 @@
         Body Care <span>✦</span> Botanical Teas <span>✦</span> Candles <span>✦</span> Handmade Paper <span>✦</span> Fiber Arts <span>✦</span> Jewelry <span>✦</span> Small Woodcraft <span>✦</span> Custom Hoops <span>✦</span> Curiosities Made to Order
       </div>
       <div class="curiosities-cta">
-        <a href="mailto:giocchina@thepoetsapothecary.com" class="btn violet">Inquire About a Piece →</a>
+        <a href="/cdn-cgi/l/email-protection#12757b7d71717a7b7c7352667a77627d77666173627d667a777173606b3c717d7f" class="btn violet">Inquire About a Piece →</a>
         <div class="curiosities-cta-note">Tell me what you're looking for. If I can make it, I will.</div>
       </div>
     </div>
@@ -746,7 +749,7 @@
   <div class="section-inner">
     <div class="section-header reveal">
       <div class="celestial-divider" style="color:var(--teal-light)">☽ ✦ ☾</div>
-      <div class="section-label" style="color:var(--teal-light)">Workshops &amp; Pop-Ups</div>
+      <div class="section-label" style="color:var(--teal-light)">Workshops & Pop-Ups</div>
       <h2 class="section-title" style="color:var(--bone)">Intimate gatherings <em>rooted in making</em></h2>
       <p class="section-intro">Workshops are small by design — never more than 6 guests. Each one is led entirely by me. This is not a class. This is an experience.</p>
     </div>
@@ -754,14 +757,14 @@
       <div class="workshop-hero">
         <div class="workshop-hero-inner">
           <div class="wbadge">✦ Signature Experience — Now Booking</div>
-          <div class="wname">Henna &amp; Intention</div>
+          <div class="wname">Henna & Intention</div>
           <div class="wdesc">Come sit with me. We begin with a moment of stillness — a chance to ask yourself what you're carrying and what you'd like to call in. Then I blend paste by hand and place a design on your skin while we talk, or sit quietly, or both. You'll leave with henna that lasts 1–2 weeks, an intention card, and the particular fullness that comes from being seen and made something beautiful.</div>
           <div class="wmeta">
             <div class="wmeta-item"><span>Location</span><strong>Martha's Vineyard</strong></div>
             <div class="wmeta-item"><span>Group Size</span><strong>4–6 Guests</strong></div>
             <div class="wmeta-item"><span>Investment</span><strong>$65 / person</strong></div>
           </div>
-          <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_WORKSHOP_LINK" class="btn teal">Reserve Your Seat →</a>
+          <a href="YOUR_ACUITY_WORKSHOP_LINK" class="btn teal">Reserve Your Seat →</a>
         </div>
       </div>
     </div>
@@ -776,7 +779,7 @@
       </div>
       <div class="workshop-extra">
         <div class="we-name">Private Gatherings</div>
-        <div class="we-desc">Custom workshop experiences for groups of 4–10. Studio &amp; wellness space collaborations welcome.</div>
+        <div class="we-desc">Custom workshop experiences for groups of 4–10. Studio & wellness space collaborations welcome.</div>
       </div>
     </div>
     <div class="cafe-wrap reveal" style="margin-top: 32px;">
@@ -786,13 +789,13 @@
         <div class="cafe-sample-label">✦ Sample Menu — Offerings Being Finalized · Coming Soon</div>
         <div class="cafe-menu">
           <div class="cmi"><div class="cmi-name">The Daily Paper</div><div class="cmi-note">Handmade paper from reclaimed materials</div></div>
-          <div class="cmi"><div class="cmi-name">Pour &amp; Intend</div><div class="cmi-note">Hand-poured candle in a salvaged vessel</div></div>
+          <div class="cmi"><div class="cmi-name">Pour & Intend</div><div class="cmi-note">Hand-poured candle in a salvaged vessel</div></div>
           <div class="cmi"><div class="cmi-name">Marked</div><div class="cmi-note">Organic henna applied by Giocchina</div></div>
           <div class="cmi"><div class="cmi-name">Poet's Corner</div><div class="cmi-note">Spoken word session — your words on handmade paper</div></div>
           <div class="cmi"><div class="cmi-name">From the Farm</div><div class="cmi-note">Seasonal botanical offering — grown here</div></div>
           <div class="cmi"><div class="cmi-name">More Coming</div><div class="cmi-note">Menu in development · follow along</div></div>
         </div>
-        <a href="mailto:giocchina@thepoetsapothecary.com" class="btn violet">Stay in the Loop →</a>
+        <a href="/cdn-cgi/l/email-protection#62050b0d01010a0b0c0322160a07120d07161103120d160a070103101b4c010d0f" class="btn violet">Stay in the Loop →</a>
       </div>
     </div>
     <div class="movement-ritual reveal">
@@ -807,21 +810,21 @@
   <div class="section-inner">
     <div class="section-header reveal">
       <div class="celestial-divider">✦ ✧ ✦</div>
-      <div class="section-label">Book &amp; Connect</div>
+      <div class="section-label">Book & Connect</div>
       <h2 class="section-title">Let's work <em>together</em></h2>
       <p class="section-intro">Every booking starts with a conversation. Reach out directly or use the service links below — I respond to all inquiries personally, by email.</p>
     </div>
     <div class="two-col reveal">
       <div>
         <div class="contact-items">
-          <a href="mailto:giocchina@thepoetsapothecary.com" class="contact-item">
-            <div><div class="ci-label">Email</div><div class="ci-value">giocchina@thepoetsapothecary.com</div></div>
+          <a href="/cdn-cgi/l/email-protection#34535d5b57575c5d5a5574405c51445b51404755445b405c515755464d1a575b59" class="contact-item">
+            <div><div class="ci-label">Email</div><div class="ci-value"><span class="__cf_email__" data-cfemail="7116181e121219181f1031051914011e14050210011e051914121003085f121e1c">[email&#160;protected]</span></div></div>
           </a>
           <a href="https://instagram.com/thepoetsapothecary_mv" class="contact-item">
             <div><div class="ci-label">Instagram</div><div class="ci-value">@thepoetsapothecary_mv</div></div>
           </a>
-          <a href="https://giocchinamarie.substack.com/" target="_blank" class="contact-item">
-            <div><div class="ci-label">Just Words — Poetry &amp; Writing</div><div class="ci-value">giocchinamarie.substack.com</div></div>
+          <a href="https://giocchinamarie.substack.com" target="_blank" class="contact-item">
+            <div><div class="ci-label">Just Words — Poetry & Writing</div><div class="ci-value">giocchinamarie.substack.com</div></div>
           </a>
         </div>
         <p style="margin-top:16px; font-size:0.88rem; font-style:italic; color:var(--muted);">Based on Martha's Vineyard. All services available remotely.</p>
@@ -829,20 +832,20 @@
       <div>
         <div class="booking-cards">
           <div class="booking-card">
-            <div><div class="bc-label">Henna &amp; Body Art</div><div class="bc-name">Sessions, events &amp; ceremonies</div></div>
-            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_HENNA_LINK" class="btn">Book →</a>
+            <div><div class="bc-label">Henna & Body Art</div><div class="bc-name">Sessions, events & ceremonies</div></div>
+            <a href="YOUR_ACUITY_HENNA_LINK" class="btn">Book →</a>
           </div>
           <div class="booking-card">
-            <div><div class="bc-label">Workshops &amp; Events</div><div class="bc-name">Henna &amp; Intention + seasonal offerings</div></div>
-            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_WORKSHOP_LINK" class="btn teal">Reserve →</a>
+            <div><div class="bc-label">Workshops & Events</div><div class="bc-name">Henna & Intention + seasonal offerings</div></div>
+            <a href="YOUR_ACUITY_WORKSHOP_LINK" class="btn teal">Reserve →</a>
           </div>
           <div class="booking-card">
             <div><div class="bc-label">Bookkeeping Services</div><div class="bc-name">Free email consultation</div></div>
-            <a href="file:///Users/giocchinakuester/Downloads/YOUR_ACUITY_BOOKKEEPING_LINK" class="btn forest">Start →</a>
+            <a href="YOUR_ACUITY_BOOKKEEPING_LINK" class="btn forest">Start →</a>
           </div>
           <div class="booking-card">
-            <div><div class="bc-label">Handcrafted Curiosities</div><div class="bc-name">Custom orders &amp; commissions</div></div>
-            <a href="mailto:giocchina@thepoetsapothecary.com" class="btn violet">Inquire →</a>
+            <div><div class="bc-label">Handcrafted Curiosities</div><div class="bc-name">Custom orders & commissions</div></div>
+            <a href="/cdn-cgi/l/email-protection#adcac4c2cecec5c4c3ccedd9c5c8ddc2c8d9deccddc2d9c5c8ceccdfd483cec2c0" class="btn violet">Inquire →</a>
           </div>
         </div>
       </div>
@@ -858,15 +861,15 @@
   </div>
   <div class="footer-copy">© 2026 The Poet's Apothecary</div>
   <ul class="footer-nav">
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#henna">Henna</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#bookkeeping">Bookkeeping</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#workshops">Workshops</a></li>
-    <li><a href="https://giocchinamarie.substack.com/" target="_blank">Just Words</a></li>
-    <li><a href="file:///Users/giocchinakuester/Downloads/the-poets-apothecary-final%20(2).html#contact">Contact</a></li>
+    <li><a href="#henna">Henna</a></li>
+    <li><a href="#bookkeeping">Bookkeeping</a></li>
+    <li><a href="#workshops">Workshops</a></li>
+    <li><a href="https://giocchinamarie.substack.com" target="_blank">Just Words</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function toggleMenu() {
     document.getElementById('mobileMenu').classList.toggle('open');
   }
@@ -890,15 +893,4 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a:not(.nav-book)');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
-    navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + current ? 'var(--silver-light)' : ''; });
-  });
-</script>
-
-
-</body></html>
+  const sec
